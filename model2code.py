@@ -22,7 +22,6 @@ import argparse
 parser = argparse.ArgumentParser(
     description='Code Generator for converting paddle model to python code.')
 parser.add_argument('--model_path_prefix', default='./simple_model/model')
-#parser.add_argument('--model_path_prefix', default='/Work/XPU/pd_model/inference_model/model')
 parser.add_argument('--code_dir', default='./output_code')
 args = parser.parse_args()
 print(args)
