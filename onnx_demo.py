@@ -31,7 +31,7 @@ print(goal_input.ndim)
 print(goal_input.size) 
 print(goal_input.dtype)
 
-onnx_file="./mpath.onnx"
+onnx_file="./new_model.onnx"
 
 print("onnx_file:",onnx_file)
 
@@ -64,5 +64,7 @@ print("results:",results)
 print("data value:",results[0])
 
 results[0].tofile("out.cpu.0.bin")
+
+
 
 print("Exported model has been predict by ONNXRuntime!")
